@@ -1,14 +1,14 @@
 ﻿
-# include <Siv3D.hpp>
+#include"SceneManager.h"
 
 void Main()
 {
-	const Font font(30);
+	
+	FontAsset::Register(L"debug", 14);
+	SceneManager scene_manager;
 
 	while (System::Update())
 	{
-		font(L"aaaaa").draw();
-
-		Circle(Mouse::Pos(), 50).draw({ 255, 0, 0, 127 });
+		scene_manager.updateScene();
 	}
 }
