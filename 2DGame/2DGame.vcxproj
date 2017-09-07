@@ -162,10 +162,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Agent.cpp" />
+    <ClCompile Include="AgentAI.cpp" />
     <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="Level.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
     <ClCompile Include="ResultScene.cpp" />
-    <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -284,7 +288,13 @@
     <Font Include="Example\YomogiFont.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Agent.h" />
+    <ClInclude Include="AgentAI.h" />
+    <ClInclude Include="AgentController.h" />
     <ClInclude Include="GameScene.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="PlayerController.h" />
     <ClInclude Include="ResultScene.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneManager.h" />

@@ -76,27 +76,57 @@
     <Filter Include="リソース ファイル\Example\Well">
       <UniqueIdentifier>{eb86b9be-05b8-45c6-89c8-f91a5437157c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{013d5b1c-716d-4786-a708-1876b02f113c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scene">
+      <UniqueIdentifier>{c9d552b0-033b-497a-9d32-282bd67ab44c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object">
+      <UniqueIdentifier>{7f3506e8-f92e-4976-9612-90b9a86fc897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Agent">
+      <UniqueIdentifier>{f68f60d0-d3e0-486f-a140-a0cec03b2b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object">
+      <UniqueIdentifier>{a8a795fd-6c8c-4465-ada8-b3dec10a4b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Agent">
+      <UniqueIdentifier>{2b76b0bb-4f9a-4e10-9b3d-9ff2b9acebbb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="TitleScene.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="GameScene.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
     <ClCompile Include="ResultScene.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Scene.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent.cpp">
+      <Filter>ソース ファイル\Object\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="AgentAI.cpp">
+      <Filter>ソース ファイル\Object\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>ソース ファイル\Object\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -407,22 +437,40 @@
     </Font>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SceneManager.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="TitleScene.h">
+    <ClInclude Include="stdafx.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="GameScene.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
     <ClInclude Include="ResultScene.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="stdafx.h">
+    <ClInclude Include="Scene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent.h">
+      <Filter>ヘッダー ファイル\Object\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="AgentAI.h">
+      <Filter>ヘッダー ファイル\Object\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="AgentController.h">
+      <Filter>ヘッダー ファイル\Object\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>ヘッダー ファイル\Object\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
