@@ -4,7 +4,7 @@
 class Level
 {
 private:
-	Object *object;
+	std::shared_ptr<Object> object;
 public:
 	Level();
 	~Level();

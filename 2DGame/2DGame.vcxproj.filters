@@ -85,21 +85,36 @@
     <Filter Include="ソース ファイル\Object">
       <UniqueIdentifier>{7f3506e8-f92e-4976-9612-90b9a86fc897}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Object\Agent">
-      <UniqueIdentifier>{f68f60d0-d3e0-486f-a140-a0cec03b2b1c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ヘッダー ファイル\Object">
       <UniqueIdentifier>{a8a795fd-6c8c-4465-ada8-b3dec10a4b46}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Object\Agent">
+    <Filter Include="ソース ファイル\Object\ObjectFrame">
+      <UniqueIdentifier>{d4091da6-4f4d-4aef-9db2-0ec581f5841b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\ObjectFrame">
+      <UniqueIdentifier>{dfdbec66-2bbe-4295-a5fb-a7d70c52cb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\ObjectElement">
+      <UniqueIdentifier>{d6f09982-e8b2-41cd-b4d9-97478f14a01a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\ObjectElement\Agent">
+      <UniqueIdentifier>{f68f60d0-d3e0-486f-a140-a0cec03b2b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\ObjectElement">
+      <UniqueIdentifier>{e768f292-2bc7-4d5e-83b0-939bf75da269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\ObjectElement\Agent">
       <UniqueIdentifier>{2b76b0bb-4f9a-4e10-9b3d-9ff2b9acebbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Etcetera">
+      <UniqueIdentifier>{c55627f8-5834-49be-a2fc-8531d2f490fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Etcetera">
+      <UniqueIdentifier>{77637ad6-47e8-42b6-bbcd-2d499942baee}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="stdafx.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="GameScene.cpp">
@@ -115,19 +130,43 @@
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
     <ClCompile Include="Agent.cpp">
-      <Filter>ソース ファイル\Object\Agent</Filter>
+      <Filter>ソース ファイル\Object\ObjectElement\Agent</Filter>
     </ClCompile>
     <ClCompile Include="AgentAI.cpp">
-      <Filter>ソース ファイル\Object\Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="Object.cpp">
-      <Filter>ソース ファイル\Object</Filter>
+      <Filter>ソース ファイル\Object\ObjectElement\Agent</Filter>
     </ClCompile>
     <ClCompile Include="PlayerController.cpp">
-      <Filter>ソース ファイル\Object\Agent</Filter>
+      <Filter>ソース ファイル\Object\ObjectElement\Agent</Filter>
     </ClCompile>
     <ClCompile Include="Level.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Object\ObjectFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル\Object\ObjectFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="AutonomousAgent.cpp">
+      <Filter>ソース ファイル\Object\ObjectFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>ソース ファイル\Object\ObjectElement</Filter>
+    </ClCompile>
+    <ClCompile Include="add_func_input.cpp">
+      <Filter>ソース ファイル\Etcetera</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル\Etcetera</Filter>
+    </ClCompile>
+    <ClCompile Include="Char1.cpp">
+      <Filter>ソース ファイル\Object\ObjectElement\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="Char1Action.cpp">
+      <Filter>ソース ファイル\Object\ObjectElement\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="CharAction.cpp">
+      <Filter>ソース ファイル\Object\ObjectElement\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="AgentController.cpp">
+      <Filter>ソース ファイル\Object\ObjectElement\Agent</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -437,9 +476,6 @@
     </Font>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="GameScene.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
@@ -456,21 +492,45 @@
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Agent.h">
-      <Filter>ヘッダー ファイル\Object\Agent</Filter>
+      <Filter>ヘッダー ファイル\Object\ObjectElement\Agent</Filter>
     </ClInclude>
     <ClInclude Include="AgentAI.h">
-      <Filter>ヘッダー ファイル\Object\Agent</Filter>
+      <Filter>ヘッダー ファイル\Object\ObjectElement\Agent</Filter>
     </ClInclude>
     <ClInclude Include="AgentController.h">
-      <Filter>ヘッダー ファイル\Object\Agent</Filter>
+      <Filter>ヘッダー ファイル\Object\ObjectElement\Agent</Filter>
     </ClInclude>
     <ClInclude Include="PlayerController.h">
-      <Filter>ヘッダー ファイル\Object\Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="Object.h">
-      <Filter>ヘッダー ファイル\Object</Filter>
+      <Filter>ヘッダー ファイル\Object\ObjectElement\Agent</Filter>
     </ClInclude>
     <ClInclude Include="Level.h">
+      <Filter>ヘッダー ファイル\Object\ObjectFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ヘッダー ファイル\Object\ObjectFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="AutonomousAgent.h">
+      <Filter>ヘッダー ファイル\Object\ObjectFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>ヘッダー ファイル\Object\ObjectElement</Filter>
+    </ClInclude>
+    <ClInclude Include="add_func_input.h">
+      <Filter>ヘッダー ファイル\Etcetera</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル\Etcetera</Filter>
+    </ClInclude>
+    <ClInclude Include="Char1.h">
+      <Filter>ヘッダー ファイル\Object\ObjectElement\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Char1Action.h">
+      <Filter>ヘッダー ファイル\Object\ObjectElement\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="CharAction.h">
+      <Filter>ヘッダー ファイル\Object\ObjectElement\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="CharactersHeader.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

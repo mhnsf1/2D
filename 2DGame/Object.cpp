@@ -2,10 +2,10 @@
 #include "Object.h"
 
 
-Object::Object(Point _pos,Point _size)
+Object::Object()
 {
-	pos = _pos;
-	size = _size;
+	pos = Point(0,0);
+	size = Point(0,0);
 	texture = Texture(L"Resources/no_image.png");
 }
 

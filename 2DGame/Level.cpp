@@ -4,7 +4,8 @@
 
 Level::Level()
 {
-	object = new Object(Point(100, 100), Point(100, 100));
+	object = std::make_shared<Object>();
+	object->pos = Point(300,100);
 }
 
 

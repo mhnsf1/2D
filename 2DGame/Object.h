@@ -4,7 +4,7 @@ class Object
 private:
 	std::vector<Rect> collider;
 public:
-	Object(Point,Point);
+	Object();
 	~Object();
 	Point pos;
 	Point size;
